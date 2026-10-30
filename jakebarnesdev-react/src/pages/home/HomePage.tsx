@@ -55,7 +55,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                     <Planet
                         name="Email Me"
                         isExternal={true}
-                        link="mailto:jakebarnescodes@pm.me"
+                        link="mailto:jake@jakebarnes.dev"
                         imageSrc={emailImage}
                         color="rgb(180, 180, 180)"
                     />
@@ -111,7 +111,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                         <Planet
                             name="Email Me"
                             isExternal={true}
-                            link="mailto:jakebarnescodes@pm.me"
+                            link="mailto:jake@jakebarnes.dev"
                             imageSrc={emailImage}
                             color="rgb(180, 180, 180)"
                         />
