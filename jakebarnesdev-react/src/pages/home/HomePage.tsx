@@ -41,7 +41,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                     <Planet
                         name="My GitHub"
                         isExternal={true}
-                        link="https://github.com/jakebarnescodes"
+                        link="https://github.com/jakebarnes-dev"
                         imageSrc={githubImage}
                         color="rgb(240, 81, 51)"
                     />
@@ -93,7 +93,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                         <Planet
                             name="My GitHub"
                             isExternal={true}
-                            link="https://github.com/jakebarnescodes"
+                            link="https://github.com/jakebarnes-dev"
                             imageSrc={githubImage}
                             color="rgb(240, 81, 51)"
                         />
