@@ -48,7 +48,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                     <Planet
                         name="My LinkedIn"
                         isExternal={true}
-                        link="https://www.linkedin.com/in/jakesbarnesdev/"
+                        link="https://www.linkedin.com/in/jakebarnesdev/"
                         imageSrc={linkedinImage}
                         color="rgb(2, 116, 179)"
                     />
@@ -102,7 +102,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                         <Planet
                             name="My LinkedIn"
                             isExternal={true}
-                            link="https://www.linkedin.com/in/jakesbarnesdev/"
+                            link="https://www.linkedin.com/in/jakebarnesdev/"
                             imageSrc={linkedinImage}
                             color="rgb(2, 116, 179)"
                         />
