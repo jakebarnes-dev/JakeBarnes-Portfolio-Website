@@ -39,14 +39,14 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                         color="rgb(0, 106, 255)"
                     />
                     <Planet
-                        name="My GitHub"
+                        name="Projects on GitHub"
                         isExternal={true}
                         link="https://github.com/jakebarnes-dev"
                         imageSrc={githubImage}
                         color="rgb(240, 81, 51)"
                     />
                     <Planet
-                        name="My LinkedIn"
+                        name="LinkedIn Profile"
                         isExternal={true}
                         link="https://www.linkedin.com/in/jakebarnesdev/"
                         imageSrc={linkedinImage}
@@ -82,7 +82,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                     </Orbiter>
                     <Orbiter currentAngle={angle} angleOffset={72} distance={0.6}>
                         <Planet
-                            name="Follow my BlueSky"
+                            name="BlueSky"
                             isExternal={true}
                             link="https://bsky.app/profile/jakebarnes.dev"
                             imageSrc={blueskyImage}
@@ -91,7 +91,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                     </Orbiter>
                     <Orbiter currentAngle={angle} angleOffset={216} distance={0.8}>
                         <Planet
-                            name="My GitHub"
+                            name="GitHub"
                             isExternal={true}
                             link="https://github.com/jakebarnes-dev"
                             imageSrc={githubImage}
@@ -100,7 +100,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                     </Orbiter>
                     <Orbiter currentAngle={angle} angleOffset={144} distance={0.9}>
                         <Planet
-                            name="My LinkedIn"
+                            name="LinkedIn"
                             isExternal={true}
                             link="https://www.linkedin.com/in/jakebarnesdev/"
                             imageSrc={linkedinImage}
