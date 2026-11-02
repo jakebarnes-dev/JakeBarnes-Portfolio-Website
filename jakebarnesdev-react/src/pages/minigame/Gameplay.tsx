@@ -45,8 +45,9 @@ export function Gameplay({
     const asteroids = useRef<AsteroidData[]>([]);
     const [asteroidsState, setAsteroidsState] = useState<AsteroidData[]>([]);
     const asteroidHitboxBaseRadius = 0.027;
+    const minAsteroidCount = 1;
     const maxAsteroidCount = 200;
-    const asteroidSpawnTimer = useRef(5 * 1000);
+    const asteroidSpawnTimer = useRef(2 * 1000);
     const [asteroidSpawnTimerState, setAsteroidSpawnTimerState] = useState(0);
 
     const [lives, setLives] = useState(3);
@@ -227,7 +228,7 @@ export function Gameplay({
             asteroids.current.push(...newAsteroids);
             setAsteroidsState(asteroids.current);
 
-            if (asteroids.current.length < 4) {
+            if (asteroids.current.length < minAsteroidCount) {
                 createAsteroid(1, null);
             }
 
@@ -242,7 +243,7 @@ export function Gameplay({
             if (asteroids.current.length < maxAsteroidCount) {
                 createAsteroid(Math.random() + 0.5, null);
             }
-            asteroidSpawnTimer.current = Math.max(1, 0.98 * asteroidSpawnTimer.current);
+            asteroidSpawnTimer.current = Math.max(10, 0.99 * asteroidSpawnTimer.current);
             setAsteroidSpawnTimerState(asteroidSpawnTimer.current);
         }, asteroidSpawnTimer.current);
 
@@ -273,7 +274,6 @@ export function Gameplay({
                 {lives >= 2 ? (<img src={HeartImage} alt="Heart" />) : null}
                 {lives >= 3 ? (<img src={HeartImage} alt="Heart" />) : null}
             </div>
-            
             <p
                 className="instructions-container"
             >Arrow Keys to Move. Spacebar to Shoot.</p>
