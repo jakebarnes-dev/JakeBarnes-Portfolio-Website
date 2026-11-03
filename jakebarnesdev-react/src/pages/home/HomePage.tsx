@@ -71,7 +71,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                             color="rgb(255, 255, 255)"
                         />
                     </Orbiter>
-                    <Orbiter currentAngle={angle} angleOffset={0} distance={0.4}>
+                    <Orbiter currentAngle={angle} angleOffset={0} distance={0.6}>
                         <Planet
                             name="Play Minigame"
                             isExternal={false}
@@ -80,7 +80,7 @@ export function HomePage({ isMobile }: { isMobile: boolean }) {
                             color="rgb(57, 255, 0)"
                         />
                     </Orbiter>
-                    <Orbiter currentAngle={angle} angleOffset={72} distance={0.6}>
+                    <Orbiter currentAngle={angle} angleOffset={72} distance={0.7}>
                         <Planet
                             name="BlueSky"
                             isExternal={true}
